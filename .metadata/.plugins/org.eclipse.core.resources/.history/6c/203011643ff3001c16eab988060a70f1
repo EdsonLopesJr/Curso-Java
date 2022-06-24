@@ -1,0 +1,19 @@
+package arrays;
+
+import java.util.Scanner;
+
+public class DesafioArrays {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.print("Quantas notas você gostaria de informar ? ");
+		int qtdNotas = entrada.nextInt();
+		
+		for(int i = 0;i <= qtdNotas; i++) {
+			System.out.println("Digite a "+i+"ª nota: ");
+		}
+		entrada.close();
+	}
+}

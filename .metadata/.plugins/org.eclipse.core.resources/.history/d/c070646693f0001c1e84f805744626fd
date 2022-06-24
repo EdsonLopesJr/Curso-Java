@@ -1,0 +1,26 @@
+package controle.desafios;
+
+import java.util.Scanner;
+
+public class Ex004 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.print("Informe um número qualquer: ");
+		int n = entrada.nextInt();
+		
+		if(n % 5 !=0 && n % 3 != 0 && n % 2 != 0 && n == 2) {
+			
+			System.out.println(n+" é PRIMO!");
+			
+		} else {
+			
+			System.out.println(n+ " não é primo!");
+			
+		}
+		
+		entrada.close();
+	}
+}

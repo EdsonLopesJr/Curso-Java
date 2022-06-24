@@ -1,0 +1,23 @@
+package controle;
+
+public class SwitchSemBreak {
+
+	public static void main(String[] args) {
+		
+		String faixa = "1";
+		switch (faixa.toLowerCase()) {
+		case "preta":
+			System.out.println("sadsda");
+		case "branca":
+			System.out.println("2");
+		case "azul":
+			System.out.println("3");
+		case "verde":
+			System.out.println("4");
+		case "rosa":
+			System.out.println("5");
+		case "cinza":
+			System.out.println("6");
+		}
+	}
+}

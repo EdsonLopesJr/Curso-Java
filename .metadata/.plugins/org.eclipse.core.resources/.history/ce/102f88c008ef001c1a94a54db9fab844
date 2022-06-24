@@ -1,0 +1,28 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+
+//		int qtd_notas = 0;
+		double nota = 0;
+		
+		System.out.println("Insira as notas dos alunos: ");
+		
+		
+		while(nota >= 0 && nota <= 10) {
+			
+			nota = entrada.nextDouble();
+			
+//			qtd_notas++;
+		}
+
+		entrada.close();
+		
+		
+	}
+}

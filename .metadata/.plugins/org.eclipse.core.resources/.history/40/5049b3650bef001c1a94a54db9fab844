@@ -1,0 +1,43 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+
+		int qtd_notas = 0;
+		double nota = 0;
+		double total = 0;
+		
+		System.out.println("Insira as notas ou digite -1 para sair");
+		System.out.println("\n");
+		System.out.println("Notas do aluno: ");
+		
+		while(nota != -1) {
+			
+			while(nota >= 0 && nota <= 10) {
+				
+				nota = entrada.nextDouble();
+				
+				if(nota >= 0 && nota <= 10) {
+					total =+ nota;
+					qtd_notas++;
+				} else if(nota > 10) {
+					System.out.println("Valor ínvalido");
+				}
+		
+			}
+			qtd_notas++;
+		}
+		
+		double media = total / qtd_notas;
+		
+		System.out.println("A média do aluno é "+ media);
+		entrada.close();
+		
+		
+	}
+}

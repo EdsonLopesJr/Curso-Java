@@ -1,0 +1,35 @@
+package arrays;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+public class DesafioArrays {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.print("Quantas notas você gostaria de informar ? ");
+		int qtdNotas = entrada.nextInt();
+		double[] notasAluno = new double[qtdNotas];
+		
+		for(int i = 1;i <= qtdNotas; i++) {
+			System.out.print("Digite a "+i+"ª nota: ");
+			double notas = entrada.nextDouble();
+			System.out.println();
+			
+			notasAluno[i] = notas;
+			
+		}
+		System.out.println(Arrays.toString(notasAluno));
+		
+//		double total = 0;
+//		for (int i = 0; i < qtdNotas; i++) {
+//			total += notasAluno[i];
+//		}
+//		
+//		System.out.println(total / qtdNotas);
+		entrada.close();
+	}
+}
