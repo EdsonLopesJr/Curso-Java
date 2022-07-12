@@ -8,7 +8,9 @@ public class CarroTeste {
 
 	public static void main(String[] args) {
 		
-		Carro ferrari = new Ferrari();
+		Ferrari ferrari = new Ferrari();
+//		ferrari.ligarTurbo();
+		ferrari.ligarAr();
 		
 		System.out.println(ferrari);
 		ferrari.acelerar();
@@ -19,6 +21,7 @@ public class CarroTeste {
 		System.out.println(ferrari);
 		ferrari.frear();
 		System.out.println(ferrari);
+		System.out.println(ferrari.nivelDoAr());
 		
 		Carro civic = new Civic();
 		System.out.println();
